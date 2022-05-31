@@ -1,0 +1,34 @@
+NAME = libftprintf.a
+
+CC = gcc
+CFLAGS = -Wall -Wextra -Werror
+AR = ar rcs
+RM = rm -f
+
+FUNC = ft_printf\
+	   print_char\
+	   print_string\
+	   print_nbr\
+	   print_hexa
+
+
+SRCS = $(addsuffix .c, $(FUNC))
+OBJS = $(addsuffix .o, $(FUNC))
+
+.c.o: $(SRCS)
+	$(CC) $(CFLAGS) -c -o $@ $<
+
+$(NAME) : $(OBJS)
+	$(AR) $@ $^
+
+all : $(NAME)
+
+clean :
+	$(RM) $(OBJS)
+
+fclean : clean
+	$(RM) $(NAME)
+
+re: fclean all
+
+.PHONY : bonus all clean fclean re
