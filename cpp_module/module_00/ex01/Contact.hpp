@@ -6,12 +6,12 @@
 /*   By: hkim2 <hkim2@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/19 16:15:56 by hkim2             #+#    #+#             */
-/*   Updated: 2022/06/19 16:15:57 by hkim2            ###   ########.fr       */
+/*   Updated: 2022/06/19 16:18:47 by hkim2            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef Contact_HPP
-#define Contact_HPP
+#ifndef CONTACT_HPP
+#define CONTACT_HPP
 
 #include <iostream>
 #include <string>
