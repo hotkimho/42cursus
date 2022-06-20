@@ -6,7 +6,7 @@
 /*   By: hkim2 <hkim2@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/19 19:24:29 by hkim2             #+#    #+#             */
-/*   Updated: 2022/06/20 19:38:45 by hkim2            ###   ########.fr       */
+/*   Updated: 2022/06/20 21:11:27 by hkim2            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ Fixed::Fixed(void)
 Fixed::Fixed(const Fixed &copy)
 {
 	std::cout << "Copy constructor called" << std::endl;
-	fixPointNumber = copy.getRawBits();
+	*this = copy;
 }
 
 Fixed& Fixed::operator=(const Fixed &op)
