@@ -6,7 +6,7 @@
 /*   By: hkim2 <hkim2@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/19 19:24:29 by hkim2             #+#    #+#             */
-/*   Updated: 2022/06/20 21:04:17 by hkim2            ###   ########.fr       */
+/*   Updated: 2022/06/20 21:23:24 by hkim2            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,6 +63,7 @@ int Fixed::getRawBits(void) const
 void Fixed::setRawBits(int const raw)
 {
 	std::cout << "setRawBits member function called" << std::endl;
+	fixPointNumber = raw;
 }
 
 int Fixed::toInt(void) const

@@ -6,7 +6,7 @@
 /*   By: hkim2 <hkim2@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/20 19:12:37 by hkim2             #+#    #+#             */
-/*   Updated: 2022/06/20 20:21:17 by hkim2            ###   ########.fr       */
+/*   Updated: 2022/06/20 21:16:51 by hkim2            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ class Fixed {
 	Fixed(const int value);
 	Fixed(const float value);
 	Fixed(const Fixed &copy);
-	Fixed& operator=(const Fixed &t);
+	Fixed& operator=(const Fixed &op);
 	~Fixed();
 
 	int getRawBits(void) const;
