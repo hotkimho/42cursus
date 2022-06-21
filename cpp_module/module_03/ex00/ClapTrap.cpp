@@ -40,7 +40,8 @@ void ClapTrap::attack(const std::string &target) {
         std::cout << name << " already dead" << std::endl;
         return;
     }
-    std::cout << "ClapTrap " << name << " attacks " << target << std::endl;
+    std::cout << "ClapTrap " << name << " attacks " << target << ", causing ";
+    std::cout << attackDamage << " points of damage!" << std::endl;
 }
 
 void ClapTrap::takeDamege(unsigned int amount) {
