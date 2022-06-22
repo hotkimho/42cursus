@@ -6,7 +6,7 @@
 /*   By: hkim2 <hkim2@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/22 17:31:10 by hkim2             #+#    #+#             */
-/*   Updated: 2022/06/22 20:02:45 by hkim2            ###   ########.fr       */
+/*   Updated: 2022/06/22 20:51:14 by hkim2            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,6 @@ Cat::Cat() {
     std::cout << "Cat Default constrictor called" << std::endl;
     type = "Cat";
     brain = new Brain();
-    //for (int i = 0; i < 100; i++) {
-    //    brain->setIdea((i + 1) + " Cat idea", i);
-    //}
 }
 
 Cat::Cat(const Cat &copy) {

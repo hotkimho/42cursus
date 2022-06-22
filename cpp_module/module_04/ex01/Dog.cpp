@@ -6,7 +6,7 @@
 /*   By: hkim2 <hkim2@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/22 17:31:10 by hkim2             #+#    #+#             */
-/*   Updated: 2022/06/22 20:36:08 by hkim2            ###   ########.fr       */
+/*   Updated: 2022/06/22 20:51:20 by hkim2            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,6 @@ Dog::Dog() {
     std::cout << "Dog Default constrictor called" << std::endl;
     type = "Dog";
     brain = new Brain();
-    //for (int i = 0; i < 100; i++) {
-    //    brain->setIdea((i + 1) + " Dog idea", i);
-    //}
 }
 
 Dog::Dog(const Dog &copy) {
@@ -46,7 +43,7 @@ Dog::~Dog() {
 }
 
 void Dog::makeSound() const {
-    std::cout << "Meow sound" << std::endl;
+    std::cout << "Bark sound" << std::endl;
 }
 
 void Dog::setBrainIdea(std::string idea, int idx) {
