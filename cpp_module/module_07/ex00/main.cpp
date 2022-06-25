@@ -6,7 +6,7 @@
 /*   By: hkim2 <hkim2@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/25 18:47:17 by hkim2             #+#    #+#             */
-/*   Updated: 2022/06/25 18:54:23 by hkim2            ###   ########.fr       */
+/*   Updated: 2022/06/25 18:55:17 by hkim2            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,16 @@
 
 int main() {
 
-    int a = 5, b = 100;
-    std::cout << "before swap" << std::endl;
-    std::cout << "a : " << a << std::endl;
-    std::cout << "b : " << b << std::endl;
-    swap(a, b);
-    std::cout << "after swap" << std::endl;
-    std::cout << "a : " << a << std::endl;
-    std::cout << "b : " << b << std::endl;
-
-    std::cout << "min value : " << min(a, b) << std::endl;
-    std::cout << "max value : " << max(a, b) << std::endl;
+    int a = 2;
+    int b = 3;
+    ::swap( a, b );
+    std::cout << "a = " << a << ", b = " << b << std::endl;
+    std::cout << "min( a, b ) = " << ::min( a, b ) << std::endl;
+    std::cout << "max( a, b ) = " << ::max( a, b ) << std::endl;
+    std::string c = "chaine1";
+    std::string d = "chaine2";
+    ::swap(c, d);
+    std::cout << "c = " << c << ", d = " << d << std::endl;
+    std::cout << "min( c, d ) = " << ::min( c, d ) << std::endl;
+    std::cout << "max( c, d ) = " << ::max( c, d ) << std::endl;
 }
