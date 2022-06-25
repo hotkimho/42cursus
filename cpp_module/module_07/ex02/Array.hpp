@@ -6,7 +6,7 @@
 /*   By: hkim2 <hkim2@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/25 19:13:42 by hkim2             #+#    #+#             */
-/*   Updated: 2022/06/25 20:31:01 by hkim2            ###   ########.fr       */
+/*   Updated: 2022/06/25 20:35:22 by hkim2            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,13 +46,13 @@ class Array {
         return *this;
     }
 
-    T operator[](unsigned int idx) {
+    T& operator[](unsigned int idx) {
         if (arrSize <= idx)
             throw IndexIsOutOfBound();
         return arr[idx];
     }
     
-    T operator[](unsigned int idx) const {
+    const T& operator[](unsigned int idx) const {
         if (arrSize <= idx)
             throw IndexIsOutOfBound();
         return arr[idx];
