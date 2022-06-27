@@ -1,5 +1,5 @@
 # 1. Subject
-- [Subject](https://github.com/hotkimho/42cursus/tree/master/gnl)
+- [Subject](https://github.com/hotkimho/42cursus/blob/master/gnl/reference/get_next_line_subject.pdf)
 
 # 2. 규칙
 - `전역변수`는 사용할 수 없습니다
