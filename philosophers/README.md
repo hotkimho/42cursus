@@ -112,7 +112,15 @@ pthread_mutex_lock, pthread_mutex_unlock`
 # 6. 요약
 각각 `멀티스레드, 뮤텍스`, `멀티프로세스, 세마포어`를 이용하여 식사하는 철학자 문제를 해결하는 프로젝트입니다.
 
-# 7. 평가
+# 7. 사용 방법 및 실행 결과
+```c
+make
+./philo 4 420 100 200 2
+```
+
+![gif](./images/execute.gif)
+
+# 8. 평가
 ![img.png](./images/eval_1.png)
 
 평가를 진행하던중 `data race`가 있었고 평가자분께서 이를 발견해주셨습니다. 덕분에 `data race`가 무엇인지, 어떻게 발생하고 해결하는지
