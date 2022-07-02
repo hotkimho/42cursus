@@ -1,6 +1,6 @@
 TARGET = iter
 
-CC = g++
+CC = clang++
 CFLANG = -Wall -Wextra -Werror -std=c++98
 
 SRCS = main.cpp \
