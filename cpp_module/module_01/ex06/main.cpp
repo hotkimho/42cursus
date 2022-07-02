@@ -6,13 +6,13 @@
 /*   By: hkim2 <hkim2@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/19 16:39:04 by hkim2             #+#    #+#             */
-/*   Updated: 2022/06/19 20:03:26 by hkim2            ###   ########.fr       */
+/*   Updated: 2022/07/03 01:38:35 by hkim2            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Karen.hpp"
+#include "Harl.hpp"
 
-int karenFilter(std::string level)
+int harlFilter(std::string level)
 {
 	std::string testLevels[4] = {
 		"DEBUG",
@@ -29,7 +29,7 @@ int karenFilter(std::string level)
 
 int main(int argc, char *argv[]) 
 {
-	Karen karen;
+	Harl harl;
 	if (argc != 2)
 	{
 		std::cout << "Error : Wrong Arg" << std::endl;
@@ -37,17 +37,17 @@ int main(int argc, char *argv[])
 	}
 
 	std::string filterLevel = argv[1];
-	int level = karenFilter(filterLevel);
+	int level = harlFilter(filterLevel);
 	switch (level)
 	{
 	case 0:
-		karen.complain("DEBUG");
+		harl.complain("DEBUG");
 	case 1:
-		karen.complain("INFO");
+		harl.complain("INFO");
 	case 2:
-		karen.complain("WARNING");
+		harl.complain("WARNING");
 	case 3:
-		karen.complain("ERROR");
+		harl.complain("ERROR");
 		break;	
 	default:
 		std::cout << "[ Probably complaining about insignificant problems ]";
