@@ -1,10 +1,10 @@
-TARGET = karen
+TARGET = harl
 
 CC = clang++
 CFLANG = -Wall -Wextra -Werror -std=c++98
 
 SRCS = main.cpp \
-		Karen.cpp
+		Harl.cpp
 		
 OBJS = $(SRCS:.cpp=.o)
 
