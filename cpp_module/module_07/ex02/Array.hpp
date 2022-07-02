@@ -6,7 +6,7 @@
 /*   By: hkim2 <hkim2@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/25 19:13:42 by hkim2             #+#    #+#             */
-/*   Updated: 2022/06/25 20:35:22 by hkim2            ###   ########.fr       */
+/*   Updated: 2022/07/03 00:43:04 by hkim2            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,22 +25,22 @@ class Array {
     }
 
     Array(unsigned int size) {
-        arr = new T(size);
+        arr = new T[size];
         this->arrSize = size;
     }
 
-    Array(const Array &copy) {
+    Array(const Array & copy) {
         this->arrSize = copy.arrSize;
-        arr = new T(this->arrSize);
-        for (int i = 0; i < arrSize; i++)
-            arr[i] = copy.arr[i];
-    }
+        this->arr = new T[this->arrSize];
+        for (int i = 0; i < arrSize; i++) 
+            arr[i] = copy.getArrayValue(i);
+}
 
     Array& operator=(const Array &copy) {
         if (arr)
             delete[] arr;
         arrSize = copy.arrSize;
-        arr = new T(arrSize);
+        arr = new T[arrSize];
         for (unsigned int i = 0; i < arrSize; i++)
             arr[i] = copy.arr[i];
         return *this;
@@ -69,7 +69,7 @@ class Array {
     void setArray(unsigned int idx) {
         if (arrSize < idx) 
             throw IndexIsOutOfBound();
-        for (unsigned int i = 0; i < idx; i++)
+        for (int i = 0; i < idx; i++)
             arr[i] = i;
     }
     
